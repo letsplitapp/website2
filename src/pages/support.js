@@ -41,19 +41,19 @@ const SupportPage = () => {
                         <form action="https://formspree.io/f/xvodoewq" method="post">
                             <div className="input-container">
                                 <label>First name</label>
-                                <input type="text" placeholder="First name" />
+                                <input type="text" name="fname" placeholder="First name" />
                             </div>
                             <div className="input-container">
                                 <label>Last name</label>
-                                <input type="text" placeholder="Last name" />
+                                <input type="text" name="lname" placeholder="Last name" />
                             </div>
                             <div className="input-container">
                                 <label>Email</label>
-                                <input type="text" placeholder="Email" />
+                                <input type="text" name="email" placeholder="Email" />
                             </div>
                             <div className="input-container">
                                 <label>Questions or comments*</label>
-                                <textarea placeholder="Questions or comments*"></textarea>
+                                <textarea name="name" placeholder="Questions or comments*"></textarea>
                             </div>
                             <input type="submit" name=""
                                 value="Submit" />
