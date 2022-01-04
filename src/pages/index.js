@@ -81,7 +81,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <section className="bg-blue">
+      <section className="bg-blue get-paid-custom-mb">
         <div className="container get-paid-section">
           <div className="column column-content">
             <h3>Get paid</h3>

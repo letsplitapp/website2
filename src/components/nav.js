@@ -13,12 +13,12 @@ const Nav = () => {
                     <div className="container">
                         <div className="left">
                             <div className="logo">
-                                <a href="https://jpbelley.github.io/qa/">Let’s Split</a>
+                                <a href="../">Let’s Split</a>
                             </div>
                         </div>
                         <div className={`right${toggle ? ' open' : ''}`}>
-                            <a href="https://jpbelley.github.io/qa/#how">How it works</a>
-                            <a href="https://jpbelley.github.io/qa//support">Support</a>
+                            <a href="https://www.letsplit.com/#how">How it works</a>
+                            <a href="./support">Support</a>
                         </div>
                     </div>
                 </header>

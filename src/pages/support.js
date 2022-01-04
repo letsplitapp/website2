@@ -35,7 +35,7 @@ const SupportPage = () => {
             <div className="container support-title">
                 <h3 className="h-center">Still have questions?</h3>
             </div>
-            <section>
+            <section className="support-section">
                 <div className="container inverse">
                     <div className="column column-content column-start">
                         <form action="https://formspree.io/f/xvodoewq" method="post">
