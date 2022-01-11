@@ -1,7 +1,7 @@
 module.exports = {
-  pathPrefix: `/test1`,
+  pathPrefix: ``,
   siteMetadata: {
-    siteUrl: "https://jpbelley.github.io/qa/",
+    siteUrl: "https://letsplitapp.github.io/website2",
     title: "Let's split",
   },
   plugins: [

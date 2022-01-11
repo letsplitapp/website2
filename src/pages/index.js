@@ -34,7 +34,7 @@ const IndexPage = () => {
       <section>
         <div className="container hero">
           <div className="column">
-            <h1 style={headingStyles}>A simple way to split expenses with anyone</h1>
+            <h1 style={headingStyles}>A simple way to split expenses with&nbsp;anyone</h1>
           </div>
           <div className="column">
             <img src={HeroImg} alt="iphone" />
@@ -48,7 +48,7 @@ const IndexPage = () => {
         <div className="container inverse select-section">
           <div className="column column-content">
             <h3>Select an expense</h3>
-            <p>Choose any past transaction from your credit card you wish to split</p>
+            <p>Choose any past transaction from your credit card you wish to&nbsp;split</p>
           </div>
           <div className="column column-img">
             <div className="select-img">
@@ -61,7 +61,7 @@ const IndexPage = () => {
         <div className="container choose-section">
           <div className="column column-content">
             <h3>Choose people</h3>
-            <p>Select who you want to split the transaction with individually or as a group</p>
+            <p>Select who you want to split the transaction&nbsp;with</p>
           </div>
           <div className="column column-img">
             <div className="choose-img">
@@ -74,7 +74,7 @@ const IndexPage = () => {
         <div className="container inverse split-section">
           <div className="column">
             <h3>Split the expense</h3>
-            <p>Send split request instantly between your people</p>
+            <p>Send split request directly from the&nbsp;app</p>
           </div>
           <div className="column column-img split-img">
             <img src={SplitImg} alt="iphone" />

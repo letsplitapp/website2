@@ -113,6 +113,19 @@ header {
 
     .logo {
         font-size: 1.5rem;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media screen and (min-width: $mediaQ) {
+            }
+        }
+
+        img {
+            width: 40px;
+            margin-right: 5px;
+        }
     }
 
     .right {
@@ -282,18 +295,23 @@ footer {
 * Hero
 */
 .how-title {
-    @media screen and (min-width: $mediaQ) {
-        margin-top: -30px;
-    }
     
     h2 {
         width: 100%;
         text-align: center;
-        max-width: 750px;
+        margin-top: 50px;
 
         @media screen and (min-width: $mediaQ) {
+            margin-top: 100px;
             margin-bottom: 100px;
         }
+    }
+}
+
+.column-content {
+
+    p {
+        max-width: 350px;
     }
 }
 
@@ -315,6 +333,8 @@ footer {
         width: 50vw;
         left: 0;
         transform: translateX(-25%);
+        max-width: 1200px;
+        min-width: 800px;
     }
 }
 
@@ -337,8 +357,8 @@ footer {
     @media screen and (min-width: $mediaQ) {
         position: absolute;
         left: 0;
-        right: clamp(-300px, -12vw, -30px);
-        top: clamp(-100px, -6vw, -30px);
+        right: clamp(-200px, -12vw, -30px);
+        top: clamp(-80px, -6vw, -30px);
     }
 }
 
@@ -402,6 +422,7 @@ footer {
 
 .get-paid-img {
     position: absolute;
+    max-width: 1200px;
     @media screen and (max-width: $mediaQ) {
         top: 30px;
         // right: -20vw;
@@ -412,6 +433,7 @@ footer {
         left: 0;
         width: 50vw;
         transform: translateX(-25%);
+        min-width: 800px;
     }
 }
 
