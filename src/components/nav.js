@@ -7,7 +7,7 @@ const Nav = () => {
 
     return (
             <>
-                <header className="bg-blue--light">
+                <header className="bg-blue">
                     <div className={`burger${toggle ? ' open' : ''}`} onClick={() => setToggle(!toggle)} >
                         <div className="bars"></div>
                     </div>

@@ -14,6 +14,7 @@ import Anything from '../images/anything.jpg'
 // Components
 import Nav from '../components/nav'
 import Footer from '../components/footer'
+import Mailchimp from '../components/mailchimp'
 
 // styles
 const primaryColor = "#3A41E8";
@@ -39,10 +40,11 @@ const IndexPage = () => {
       </Helmet>
       <main style={pageStyles}>
         <Nav />
-        <section className="bg-blue--light">
+        <section className="bg-blue">
           <div className="container hero">
             <div className="column">
               <h1 style={headingStyles}>A simple way to split expenses with&nbsp;anyone</h1>
+              {/* <Mailchimp /> */}
             </div>
             <div className="column">
               <img src={HeroImg} alt="iphone" />
@@ -68,7 +70,7 @@ const IndexPage = () => {
               <div>
                 <h3 className="color-black">Split anything</h3>
                 <p>Split <span className="color-blue">any</span> and <span className="color-blue">all</span> expenses</p>
-                <ul>
+                <ul className="checkmark">
                   <li>Groceries</li>
                   <li>Utilities</li>
                   <li>Vacation rentals</li>
