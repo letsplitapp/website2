@@ -8,6 +8,8 @@ import SelectImg from '../images/phone_1.png'
 import ChoosePeopleImg from '../images/choose_people.png'
 import SplitImg from '../images/split.png'
 import GetPaidImg from '../images/get_paid.png'
+import Easier from '../images/easier.jpg'
+import Anything from '../images/anything.jpg'
 
 // Components
 import Nav from '../components/nav'
@@ -32,18 +34,51 @@ const IndexPage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Let’s Split - Share expenses</title>
-        <meta name="description" content="Let’s Split app makes it easier to come to terms with friends and family. Select past expenses and send split requests to the people you want to share with, all in one app." />
+        <meta name="description" content="Let’s Split app makes it easier to come to terms with friends and family. Select past expenses, send split requests and receive your money quickly, all in one app." />
         <meta name="keywords" content="Let’s Split, Expense, Social expense, Mobile Payments, Mobile Payment App, Friends, Pay Your Friends, Startup, Share expense, Free, Simple, Split Bill, Split Check, Split Dinner, iPhone App, Android App, easy, Credit Card"></meta>
       </Helmet>
       <main style={pageStyles}>
         <Nav />
-        <section>
+        <section className="bg-blue--light">
           <div className="container hero">
             <div className="column">
               <h1 style={headingStyles}>A simple way to split expenses with&nbsp;anyone</h1>
             </div>
             <div className="column">
               <img src={HeroImg} alt="iphone" />
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="container inverse easier-section">
+            <div className="column column-content">
+              <p>Let’s Split app makes it easier to track and come to terms with shared expenses.</p>
+              <p>Send and receive money with your roommates, loved ones or friends all in one app.</p>
+            </div>
+            <div className="column column-img">
+              <div>
+                <img src={Easier} alt="iphone" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="container anything-section">
+            <div className="column column-content">
+              <div>
+                <h3 className="color-black">Split anything</h3>
+                <p>Split <span className="color-blue">any</span> and <span className="color-blue">all</span> expenses</p>
+                <ul>
+                  <li>Groceries</li>
+                  <li>Utilities</li>
+                  <li>Vacation rentals</li>
+                </ul>
+              </div>
+            </div>
+            <div className="column column-img">
+              <div>
+                <img src={Anything} alt="iphone" />
+              </div>
             </div>
           </div>
         </section>
@@ -54,7 +89,7 @@ const IndexPage = () => {
           <div className="container inverse select-section">
             <div className="column column-content">
               <h3>Select an expense</h3>
-              <p>Choose any past transaction from your credit card you wish to&nbsp;split</p>
+              <p>Choose any past transaction from your credit card you wish to&nbsp;split.</p>
             </div>
             <div className="column column-img">
               <div className="select-img">
@@ -67,7 +102,7 @@ const IndexPage = () => {
           <div className="container choose-section">
             <div className="column column-content">
               <h3>Choose people</h3>
-              <p>Select who you want to split the transaction&nbsp;with</p>
+              <p>Select who you want to split the transaction&nbsp;with.</p>
             </div>
             <div className="column column-img">
               <div className="choose-img">
@@ -80,7 +115,7 @@ const IndexPage = () => {
           <div className="container inverse split-section">
             <div className="column">
               <h3>Split the expense</h3>
-              <p>Send split request directly from the&nbsp;app</p>
+              <p>Send split request directly from the&nbsp;app.</p>
             </div>
             <div className="column column-img split-img">
               <img src={SplitImg} alt="iphone" />
@@ -91,7 +126,7 @@ const IndexPage = () => {
           <div className="container get-paid-section">
             <div className="column column-content">
               <h3>Get paid</h3>
-              <p>Receive the money directly in your account</p>
+              <p>Receive the money directly in your account.</p>
             </div>
             <div className="column column-img">
               <div className="get-paid-img">

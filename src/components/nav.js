@@ -1,5 +1,5 @@
 import React, { useState, useEffect }from "react"
-import Logo from '../images/icon.png'
+import Logo from '../images/logo.svg'
 
 // Nav
 const Nav = () => {
@@ -7,7 +7,7 @@ const Nav = () => {
 
     return (
             <>
-                <header>
+                <header className="bg-blue--light">
                     <div className={`burger${toggle ? ' open' : ''}`} onClick={() => setToggle(!toggle)} >
                         <div className="bars"></div>
                     </div>
@@ -15,7 +15,7 @@ const Nav = () => {
                         <div className="left">
                             <div className="logo">
                                 <a href="../">
-                                    <img src={Logo} alt="Let's split" />
+                                    <img src={Logo} alt="Let's split" width={40} height={40}/>
                                     Let’s Split
                                 </a>
                             </div>
