@@ -5,6 +5,7 @@ $lightGray: #EFEFEF;
 
 $containerWidth: 1260px;
 $mediaQ: 800px;
+$mediaQDesktop: 1200px;
 
 * {
     box-sizing: border-box;
@@ -42,6 +43,7 @@ ul.checkmark {
     padding-left: 40px;
 
     li {
+        display: flex;
         margin-bottom: 10px;
         position: relative;
 
@@ -97,6 +99,17 @@ h3 {
   + p {
       margin-top: 0;
   }
+}
+
+h4 {
+    color: $primaryColor;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+
+    @media screen and (min-width: $mediaQ) {
+        font-size: 30px;
+    }
 }
 
 .h-center {
@@ -322,9 +335,22 @@ footer {
 */
 .hero {
     padding-top: 40px;
+    padding-bottom: 40px;
     
     @media screen and (min-width: $mediaQ) {
-        margin-bottom: -10px;
+        margin-bottom: -30px;
+        padding-bottom: 0px;
+
+        .column-content {
+            flex-basis: 44%;
+        }
+        .column-img {
+            flex-basis: 56%;
+        }
+
+        h1 {
+            margin-top: 80px;
+        }
     }
 }
 
@@ -355,6 +381,12 @@ footer {
 .easier-section {
     padding-top: 50px;
     column-gap: 200px;
+
+    p {
+        @media screen and (max-width: $mediaQ) {
+            margin: 0 auto 16px;
+        }
+    }
 }
 
 /*****
@@ -364,16 +396,22 @@ footer {
     margin-top: 50px;
     margin-bottom: 30px;
 
-    @media screen and (min-width: $mediaQ) {
+    @media screen and (min-width: $mediaQDesktop) {
         margin-top: -175px;
         margin-bottom: 0px;
         column-gap: 0px;
     }
 
+    p {
+        @media screen and (max-width: $mediaQ) {
+            margin: 0 auto 16px;
+        }
+    }
+
     .column-content > div {
         margin-bottom: 30px;
 
-        @media screen and (min-width: $mediaQ) {
+        @media screen and (min-width: $mediaQDesktop) {
             margin-bottom: 0px;
             padding-left: 80px;
         }
@@ -390,6 +428,13 @@ footer {
             padding-bottom: 250px;
         }
     }
+
+    p {
+        @media screen and (max-width: $mediaQ) {
+            margin: 0 auto 16px;
+        }
+    }
+
 }
 
 .select-img {
@@ -416,6 +461,13 @@ footer {
             padding-bottom: clamp(30px, 10vw, 200px);
         }
     }
+
+    p {
+        @media screen and (max-width: $mediaQ) {
+            margin: 0 auto 16px;
+        }
+    }
+
 }
 
 .choose-img {
@@ -544,6 +596,7 @@ input[type=text] {
     }
 }
 
+button.button-blue,
 input[type=submit] {
     border: none;
     border-radius: 30px;
@@ -552,6 +605,12 @@ input[type=submit] {
     padding: 1rem;
     max-width: 360px;
     width: 100%;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        opacity: .9;
+    }
 }
 
 textarea {
@@ -570,4 +629,60 @@ textarea {
         font-size: 16px;
         line-height: 24px;
     }
+}
+
+/*****
+* Mailchimp Form 
+*/
+button.mailchimp-submit {
+    position: absolute;
+    right: 0;
+    width: auto;
+    padding: 0 40px;
+    min-height: 50px;
+}
+
+.mailchimp-email {
+    background-color: transparent;
+    border: none;
+    padding: 12px 21px;
+    min-height: 50px;
+    width: 100%;
+    border-radius: 100px;
+    &::placeholder {
+        line-height: 27px;
+        font-size: 16px;
+        opacity: .5;
+        color: #000;
+    }
+}
+
+.mailchimp-form {
+    position: relative;
+    border: 1px solid #B4B5C6;
+    border-radius: 100px;
+    background-color: #F8F8FA;
+    margin-bottom: 100px;
+}
+
+/*****
+* Popup
+*/
+.popup-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 100;
+}
+.popup {
+    background-color: #F6F7FF;
+    padding: 50px 60px;
+    text-align: center;
+    border-radius: 20px;
 }

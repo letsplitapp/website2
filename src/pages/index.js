@@ -42,11 +42,13 @@ const IndexPage = () => {
         <Nav />
         <section className="bg-blue">
           <div className="container hero">
-            <div className="column">
-              <h1 style={headingStyles}>A simple way to split expenses with&nbsp;anyone</h1>
-              {/* <Mailchimp /> */}
+            <div className="column column-content">
+              <div>
+                <h1 style={headingStyles}>A simple way to split expenses with&nbsp;anyone</h1>
+                <Mailchimp />
+              </div>
             </div>
-            <div className="column">
+            <div className="column column-img">
               <img src={HeroImg} alt="iphone" />
             </div>
           </div>

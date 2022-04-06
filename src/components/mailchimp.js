@@ -6,6 +6,7 @@ export default class IndexPage extends React.Component {
     state = {
         name: null,
         email: null,
+        isModalOpen: false
     }
 
     _handleChange = e => {
@@ -20,7 +21,7 @@ export default class IndexPage extends React.Component {
     _handleSubmit = e => {
         e.preventDefault()
 
-        console.log('submit', this.state)
+        // console.log('submit', this.state)
 
         addToMailchimp(this.state.email, this.state)
             .then(({ msg, result }) => {
@@ -29,30 +30,55 @@ export default class IndexPage extends React.Component {
                 if (result !== 'success') {
                     throw msg
                 }
-                alert(msg)
+                // alert(msg)
+                this.setState({ isModalOpen: true })
             })
             .catch(err => {
                 console.log('err', err)
-                alert(err)
+                // alert(err)
             })
     }
 
+    _onClickButton = () => {
+        this.setState({ isModalOpen: false })
+    }
+
     render() {
+
+        const Popup = () => {
+            return (
+                <div className='popup-overlay'>
+                    <div className='popup'>
+                        <h3>Well done!</h3>
+                        <p>We have added your email address to the signup queue. We will update you soon with your invite.</p>
+                        <button className='button-blue' onClick={this._onClickButton}>OK</button>
+                    </div>
+                </div>
+            )
+        }
+
         return (
             <div>
-                <h1>Hi people</h1>
-                <p>Submit the form below and check your browser console!</p>
                 <div>
-                    <form onSubmit={this._handleSubmit}>
+                    <form id='form1' className='mailchimp-form' onSubmit={this._handleSubmit}>
                         <input
+                            className='mailchimp-email'
                             type="email"
                             onChange={this._handleChange}
-                            placeholder="email"
+                            placeholder="Your email"
                             name="email"
                         />
-                        <input type="submit" />
+                        <button className="mailchimp-submit button-blue" type="submit" form="form1" value="Submit">Get early access</button>
                     </form>
                 </div>
+                {/* <Popup /> */}
+                {this.state.isModalOpen && <div className='popup-overlay'>
+                    <div className='popup'>
+                        <h3>Well done!</h3>
+                        <p>We have added your email address to the signup queue. We will update you soon with your invite.</p>
+                        <button className='button-blue' onClick={this._onClickButton}>OK</button>
+                    </div>
+                </div>}
             </div>
         )
     }
