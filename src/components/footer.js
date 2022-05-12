@@ -9,8 +9,8 @@ const Footer = () => {
             </div>
             <div>
                 <ul>
-                    <li><a href="./privacy-policy.pdf">Legal & Policies</a></li>
-                    <li><a href="./terms-of-use.pdf">Use of Cookies</a></li>
+                    <li><a href="./privacy-policy.pdf" target="_blank">Legal & Policies</a></li>
+                    <li><a href="./terms-of-use.pdf" target="_blank">Terms of Use</a></li>
                 </ul>
             </div>
         </footer>

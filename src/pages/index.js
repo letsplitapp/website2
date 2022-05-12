@@ -41,7 +41,7 @@ const IndexPage = () => {
       <main style={pageStyles}>
         <Nav />
         <section className="bg-blue">
-          <div className="container hero">
+          <div className="container hero" id="signup">
             <div className="column column-content">
               <div>
                 <h1 style={headingStyles}>A simple way to split expenses with&nbsp;anyone</h1>
@@ -94,6 +94,9 @@ const IndexPage = () => {
             <div className="column column-content">
               <h3>Select an expense</h3>
               <p>Choose any past transaction from your credit card you wish to&nbsp;split.</p>
+              <div className="button">
+                <a className="button-blue" href="#signup">Get early access</a>
+              </div>
             </div>
             <div className="column column-img">
               <div className="select-img">
@@ -107,6 +110,9 @@ const IndexPage = () => {
             <div className="column column-content">
               <h3>Choose people</h3>
               <p>Select who you want to split the transaction&nbsp;with.</p>
+              <div className="button">
+                <a className="button-blue" href="#signup">Get early access</a>
+              </div>
             </div>
             <div className="column column-img">
               <div className="choose-img">
@@ -120,6 +126,9 @@ const IndexPage = () => {
             <div className="column">
               <h3>Split the expense</h3>
               <p>Send split request directly from the&nbsp;app.</p>
+              <div className="button">
+                <a className="button-blue" href="#signup">Get early access</a>
+              </div>
             </div>
             <div className="column column-img split-img">
               <img src={SplitImg} alt="iphone" />
@@ -131,6 +140,9 @@ const IndexPage = () => {
             <div className="column column-content">
               <h3>Get paid</h3>
               <p>Receive the money directly in your account.</p>
+              <div className="button">
+                <a className="button-blue" href="#signup">Get early access</a>
+              </div>
             </div>
             <div className="column column-img">
               <div className="get-paid-img">
