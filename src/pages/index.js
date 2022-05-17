@@ -93,7 +93,7 @@ const IndexPage = () => {
           <div className="container inverse select-section">
             <div className="column column-content">
               <h3>Select an expense</h3>
-              <p>Choose any past transaction from your credit card you wish to&nbsp;split.</p>
+              <p>Choose any past transaction from your credit card you wish to split. No more manual entries, all your group expenses are displayed, ready to be split.</p>
               <div className="button">
                 <a className="button-blue" href="#signup">Get early access</a>
               </div>
@@ -109,7 +109,7 @@ const IndexPage = () => {
           <div className="container choose-section">
             <div className="column column-content">
               <h3>Choose people</h3>
-              <p>Select who you want to split the transaction&nbsp;with.</p>
+              <p>Select who you want to split the transaction with. You can even create groups if you have multiples expenses to split with them.</p>
               <div className="button">
                 <a className="button-blue" href="#signup">Get early access</a>
               </div>
@@ -125,7 +125,7 @@ const IndexPage = () => {
           <div className="container inverse split-section">
             <div className="column">
               <h3>Split the expense</h3>
-              <p>Send split request directly from the&nbsp;app.</p>
+              <p>Send split requests in 3 clicks. Your friends will be notified and able to repay you through the app.</p>
               <div className="button">
                 <a className="button-blue" href="#signup">Get early access</a>
               </div>
@@ -139,7 +139,7 @@ const IndexPage = () => {
           <div className="container get-paid-section">
             <div className="column column-content">
               <h3>Get paid</h3>
-              <p>Receive the money directly in your account.</p>
+              <p>Receive their payments directly in your bank account. Let’s Split makes sharing expenses and getting paid back - easy.</p>
               <div className="button">
                 <a className="button-blue" href="#signup">Get early access</a>
               </div>
