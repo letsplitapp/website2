@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useState } from "react"
 import { Helmet } from "react-helmet"
 import "../index.scss"
 
@@ -10,11 +10,15 @@ import SplitImg from '../images/split.png'
 import GetPaidImg from '../images/get_paid.png'
 import Easier from '../images/easier.jpg'
 import Anything from '../images/anything.jpg'
+import AppStore from '../images/app_store.png'
+import AppStoreQR from '../images/qrcode-apple.png'
+import GooglePlay from '../images/google_play.png'
+import GooglePlayQR from '../images/google-qr.png'
+import QR from '../images/qr.png'
 
 // Components
 import Nav from '../components/nav'
 import Footer from '../components/footer'
-import Mailchimp from '../components/mailchimp'
 
 // styles
 const primaryColor = "#3A41E8";
@@ -30,6 +34,8 @@ const headingStyles = {
 
 // markup
 const IndexPage = () => {
+  const [isModalOpen, setisModalOpen] = useState(false);
+
   return (
    <>
       <Helmet>
@@ -45,7 +51,14 @@ const IndexPage = () => {
             <div className="column column-content">
               <div>
                 <h1 style={headingStyles}>A simple way to split expenses with&nbsp;anyone</h1>
-                <Mailchimp />
+                <div className="app-button desktop">
+                  <span onClick={() => setisModalOpen(true)}><img src={AppStore} /></span>
+                  <span href="" onClick={() => setisModalOpen(true)}><img src={GooglePlay} /></span>
+                </div>
+                <div className="app-button mobile">
+                  <a href="https://apps.apple.com/ca/app/lets-split/id1625176396?itsct=apps_box_badge&amp;itscg=30200" target="_blank"><img src={AppStore} /></a>
+                  <a href="https://play.google.com/store/apps/details?id=com.letsplit.app&referrer=utm_source%3Dwebsite%26utm_medium%3Dheader%26utm_content%3Dmobile" target="_blank"><img src={GooglePlay} /></a>
+                </div>
               </div>
             </div>
             <div className="column column-img">
@@ -95,7 +108,7 @@ const IndexPage = () => {
               <h3>Select an expense</h3>
               <p>Choose any past transaction from your credit card you wish to split. No more manual entries, all your group expenses are displayed, ready to be split.</p>
               <div className="button">
-                <a className="button-blue" href="#signup">Get early access</a>
+                <a className="button-blue" href="#signup">Download</a>
               </div>
             </div>
             <div className="column column-img">
@@ -111,7 +124,7 @@ const IndexPage = () => {
               <h3>Choose people</h3>
               <p>Select who you want to split the transaction with. You can even create groups if you have multiples expenses to split with them.</p>
               <div className="button">
-                <a className="button-blue" href="#signup">Get early access</a>
+                <a className="button-blue" href="#signup">Download</a>
               </div>
             </div>
             <div className="column column-img">
@@ -127,7 +140,7 @@ const IndexPage = () => {
               <h3>Split the expense</h3>
               <p>Send split requests in 3 clicks. Your friends will be notified and able to repay you through the app.</p>
               <div className="button">
-                <a className="button-blue" href="#signup">Get early access</a>
+                <a className="button-blue" href="#signup">Download</a>
               </div>
             </div>
             <div className="column column-img split-img">
@@ -141,7 +154,7 @@ const IndexPage = () => {
               <h3>Get paid</h3>
               <p>Receive their payments directly in your bank account. Let’s Split makes sharing expenses and getting paid back - easy.</p>
               <div className="button">
-                <a className="button-blue" href="#signup">Get early access</a>
+                <a className="button-blue" href="#signup">Download</a>
               </div>
             </div>
             <div className="column column-img">
@@ -151,6 +164,28 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
+        {isModalOpen && <div className="popup-overlay" onClick={() => setisModalOpen(false)}>
+          <div className="popup">
+            <h3>Scan the QR Code</h3>
+            <p>You’ll be sent to the app store.</p>
+            <div className="app-qr">
+
+              <div className="app-qr__single apple-qr">
+                <img src={AppStoreQR} />
+                <div className="app-button">
+                  <span><img src={AppStore} /></span>
+                </div>
+              </div>
+
+              <div className="app-qr__single google-qr">
+                <img src={GooglePlayQR} />
+                <div className="app-button">
+                  <span><img src={GooglePlay} /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>}
 
         <Footer />
       </main>
