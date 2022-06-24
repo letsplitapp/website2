@@ -125,6 +125,10 @@ h4 {
         padding: 1rem 40px;
         width: auto;
         z-index: 10;
+
+        @media screen and (max-width: $mediaQ) {
+            display: inline-block;
+        }
     }
 }
 
@@ -782,7 +786,6 @@ button.mailchimp-submit {
 
     .app-qr {
         display: flex;
-        justify-content: center;
         gap: 150px;
         margin-top: 50px;
     }
@@ -799,5 +802,6 @@ button.mailchimp-submit {
 
     .app-button {
         pointer-events: none;
+        justify-content: center;
     }
 }

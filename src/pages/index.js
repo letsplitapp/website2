@@ -136,7 +136,7 @@ const IndexPage = () => {
         </section>
         <section>
           <div className="container inverse split-section">
-            <div className="column">
+            <div className="column column-content">
               <h3>Split the expense</h3>
               <p>Send split requests in 3 clicks. Your friends will be notified and able to repay you through the app.</p>
               <div className="button">
