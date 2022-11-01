@@ -54,7 +54,7 @@ const PrivacyPage = () => {
 
                                 <p>The Personal Information that we collect may include, but is not limited to:</p>
                                     
-                                    <p><ul>    
+                                    <p><ul className="dot">    
                                         <li>Your contact information, such as a name and last name, birthdate, email address, telephone number, postal address, country of residence in order to identify and correspond with you;</li>
                                         <li>Financial information such as banking information or credit card information to provide you the services through the Application</li>
                                         <li>Your login information such as your username, email address and password;</li>
@@ -78,7 +78,7 @@ const PrivacyPage = () => {
                                 <h4>4.   WHY DO WE COLLECT YOUR PERSONAL INFORMATION?</h4>
                                 <p>For specific and limited Purposes</p>
                                     <p>Let’s Split generally collects your Personal Information to:<br></br>
-                                    <ul>
+                                    <ul className="dot">
                                     <li>Establish and manage our relationship with you;</li>
                                     <li>Provide and maintain the services requested, namely the access to the Application, the management of expenses, payments, groups or records;</li>
                                     <li>Resolve disputes and troubleshoot problems;</li>
@@ -113,14 +113,13 @@ const PrivacyPage = () => {
                                     <p>We may share your Personal Information without your permission when our operations require it (in the event of a merger, acquisition, bankruptcy, or sale of assets, for example). As part of this kind of event, we may also share some or all of your Personal Information to the relevant third party (or its advisors) as part of a due diligence process.</p>
                                     <p>For other purposes with your consent</p>
                                     <p>Where you have expressly consented, your Personal Information may be shared with other third parties. For example, there may be specific instances where additional terms apply and, through these, we make clear that specific third parties process your Personal Information.</p>
+                                    
                                     <h4 id="where_info_stored">6.   WHERE IS YOUR PERSONAL INFORMATION STORED AND TRANSFERRED?</h4>
-                                <p>
-                                    Your Personal Information may be held by Let’s Split in locations other than your province, territory, state, or country of residence, including in Canada and the province of Quebec. Let’s Split may also subcontract processing to or share your Personal Information with third parties located elsewhere, including locations other than your province, territory, state, or country of residence. In such case, Let’s Split will ensure that your Personal Information is transferred to countries that have received an adequacy decision from the competent authority, or that your Personal Information is adequately protected by appropriate technical, organizational, contractual, or other lawful means. If you would like to obtain more information on these security measures, please contact us as set forth in the Section “<a href="#how_to_contact_us">How to contact us?</a>”.
+                                <p>Your Personal Information may be held by Let’s Split in locations other than your province, territory, state, or country of residence, including in Canada and the province of Quebec. Let’s Split may also subcontract processing to or share your Personal Information with third parties located elsewhere, including locations other than your province, territory, state, or country of residence. In such case, Let’s Split will ensure that your Personal Information is transferred to countries that have received an adequacy decision from the competent authority, or that your Personal Information is adequately protected by appropriate technical, organizational, contractual, or other lawful means. If you would like to obtain more information on these security measures, please contact us as set forth in the Section “<a href="#how_to_contact_us">How to contact us?</a>”.
                                 </p>
                                 <h4>7.   HOW LONG DO WE RETAIN YOUR PERSONAL INFORMATION?</h4>
 
-                                <p>
-                                    Personal Information will be retained only as long as necessary for the fulfillment of the Purposes or as required by law. At the end of such period, we strive to destroy or anonymize this information. To determine the appropriate retention period for your Personal Information, we consider the amount, nature and sensitivity of the Personal Information, the potential risk of harm from unauthorized use or disclosure of your Personal Information, the Purposes for which we process your Personal Information and whether we can achieve those Purposes through other means, and the applicable legal, regulatory, tax, accounting or other requirements. If you would like more information on this subject, we invite you to <a href="#how_to_contact_us">contact us</a>.
+                                <p>Personal Information will be retained only as long as necessary for the fulfillment of the Purposes or as required by law. At the end of such period, we strive to destroy or anonymize this information. To determine the appropriate retention period for your Personal Information, we consider the amount, nature and sensitivity of the Personal Information, the potential risk of harm from unauthorized use or disclosure of your Personal Information, the Purposes for which we process your Personal Information and whether we can achieve those Purposes through other means, and the applicable legal, regulatory, tax, accounting or other requirements. If you would like more information on this subject, we invite you to <a href="#how_to_contact_us">contact us</a>.
                                 </p>
 
                                 <h4>8.   HOW DO WE PROTECT YOUR PERSONAL INFORMATION?</h4>
@@ -138,7 +137,7 @@ const PrivacyPage = () => {
                                 <p>Non-essential Cookies</p>
                                 <p>If you have consented to their use, Let’s Split and/or its third-party partners may also use non-essential Cookies in connection with the the following:</p>
                                     <p>
-                                        <ul>
+                                        <ul className="dot">
                                             <li>
                                                 <u>Functionality Cookies (also known as “preference Cookies”)</u>: These Cookies are not essential to the provision of our services. They help personalize and enhance the user experience. For example, if you have consented to their use, such Cookies will store your communication and language preferences.
                                             </li>
@@ -157,8 +156,7 @@ const PrivacyPage = () => {
                                 <h4 id="how_to_contact_us">11.   HOW TO CONTACT US?</h4>
 
                                 <p>If you have any questions about any aspect of this Policy, wish to send a comment, make a complaint or exercise any of the <a href="#rights">rights</a> made available to you according to applicable laws, please do so through the “Contact us” link on the Application, when available, or please contact our Data Protection Officer as follows:</p>
-                                    <p>
-                                        Data Protection Officer<br></br>
+                                    <p>Data Protection Officer<br></br>
                                         <a href="support@letsplit.com">support@letsplit.com</a>
                                     </p>
                                     <p>Your request may be accepted or denied by Let’s Split based on the applicable laws. Let’s Split will take prompt corrective action when it learns of any failure to comply with this Policy. Let’s Split shall not be liable for any indirect, incidental, consequential or punitive damages relating to this Policy. You may file a complaint with the competent authority at any time if you believe that Let’s Split is not processing your Personal Information in a manner that is compliant

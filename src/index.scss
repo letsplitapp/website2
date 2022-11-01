@@ -38,10 +38,17 @@ img {
     max-width: 100%;
 }
 
-ul.dot {
+
+ul {
     margin: 15px;
     padding: 5px;
 }
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
 
 ul.checkmark {
     padding-left: 40px;
@@ -67,10 +74,7 @@ ul.checkmark {
     }
 }
 
-li {
-    margin: 0;
-    padding: 0;
-}
+
 
 h1 {
     font-size: 34px;
@@ -326,6 +330,7 @@ footer {
     ul {
         display: flex;
         margin-top: .5rem;
+        list-style-type: none;
         
         @media screen and (min-width: $mediaQ) {
             margin-top: 0;
