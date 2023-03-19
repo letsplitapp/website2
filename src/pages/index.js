@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 import "../index.scss"
 
 // Images
-import HeroImg from '../images/hero.png'
+import HeroImg from '../images/hero_new.png'
 import SelectImg from '../images/phone_1.png'
 import ChoosePeopleImg from '../images/choose_people.png'
 import SplitImg from '../images/split.png'
