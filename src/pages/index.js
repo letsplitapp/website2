@@ -47,7 +47,7 @@ const IndexPage = () => {
         <meta property="og:title" content="Let’s Split - Share expenses" />
         <meta property="og:description" content="Effortlessly manage group expenses and payments with Let's Split. Easily manage expenses, assign to members, and settle up. Try it today!" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content= "https://letsplit.com/src/images/OG.png" />
+        <meta property="og:image" content= '../images/OG.png' />
         <meta property="og:url" content="https://letsplit.com/" />
       </Helmet>
       <main style={pageStyles}>
