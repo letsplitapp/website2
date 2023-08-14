@@ -41,7 +41,7 @@ const IndexPage = () => {
   const tagManagerArgs = {
     gtmId: 'GTM-N2XT8HB'
   }
-  // TagManager.initialize(tagManagerArgs)
+
   useEffect(() => {
     TagManager.initialize(tagManagerArgs);
   }, []);

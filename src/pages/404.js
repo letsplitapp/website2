@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useEffect } from "react"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
 
@@ -27,6 +28,13 @@ const codeStyles = {
 
 // markup
 const NotFoundPage = () => {
+  const tagManagerArgs = {
+    gtmId: 'GTM-N2XT8HB'
+  }
+
+  useEffect(() => {
+    TagManager.initialize(tagManagerArgs);
+  }, []);
   return (
     <>
       <Helmet>

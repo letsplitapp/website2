@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useEffect } from "react"
 import { Helmet } from "react-helmet"
 import "../index.scss"
 
@@ -20,6 +21,13 @@ const pageStyles = {
 
 // markup
 const PrivacyPage = () => {
+    const tagManagerArgs = {
+        gtmId: 'GTM-N2XT8HB'
+      }
+    
+      useEffect(() => {
+        TagManager.initialize(tagManagerArgs);
+      }, []);
     return (
         <>
             <Helmet>
