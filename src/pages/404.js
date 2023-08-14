@@ -2,6 +2,7 @@ import * as React from "react"
 import { useEffect } from "react"
 import { Helmet } from "react-helmet"
 import { Link } from "gatsby"
+import TagManager from 'react-gtm-module'
 
 // styles
 const pageStyles = {
