@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import { Helmet } from "react-helmet"
 import "../index.scss"
+import TagManager from 'react-gtm-module'
+
 
 // Images
 import HeroImg from '../images/hero_new.png'
@@ -20,6 +22,12 @@ import QR from '../images/qr.png'
 // Components
 import Nav from '../components/nav'
 import Footer from '../components/footer'
+
+// GTM
+const tagManagerArgs = {
+  gtmId: 'GTM-N2XT8HB'
+}
+TagManager.initialize(tagManagerArgs)
 
 // styles
 const primaryColor = "#3A41E8";
@@ -50,6 +58,8 @@ const IndexPage = () => {
         <meta property="og:image" content={Og}/>
         <meta property="og:url" content="https://letsplit.com/" />
         <meta property="og:site_name" content="Let’s Split - Share expenses"/>
+
+
       </Helmet>
       <main style={pageStyles}>
         <Nav />
@@ -193,7 +203,6 @@ const IndexPage = () => {
             </div>
           </div>
         </div>}
-
         <Footer />
       </main>
     </> 
