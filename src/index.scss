@@ -38,10 +38,17 @@ img {
     max-width: 100%;
 }
 
+
 ul {
+    margin: 15px;
+    padding: 5px;
+}
+
+li {
     margin: 0;
     padding: 0;
 }
+
 
 ul.checkmark {
     padding-left: 40px;
@@ -67,11 +74,7 @@ ul.checkmark {
     }
 }
 
-li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+
 
 h1 {
     font-size: 34px;
@@ -109,10 +112,10 @@ h4 {
     color: $primaryColor;
     margin-top: 0;
     margin-bottom: 1.5rem;
-    font-size: 24px;
+    font-size: 18px;
 
     @media screen and (min-width: $mediaQ) {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
@@ -327,6 +330,7 @@ footer {
     ul {
         display: flex;
         margin-top: .5rem;
+        list-style-type: none;
         
         @media screen and (min-width: $mediaQ) {
             margin-top: 0;
@@ -715,6 +719,20 @@ textarea {
         line-height: 24px;
     }
 }
+
+/*****
+* Privacy Page 
+*/
+.text-box {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+
+
+
 
 /*****
 * Mailchimp Form 

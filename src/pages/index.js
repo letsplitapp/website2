@@ -14,6 +14,7 @@ import AppStore from '../images/app_store.png'
 import AppStoreQR from '../images/qrcode-apple.png'
 import GooglePlay from '../images/google_play.png'
 import GooglePlayQR from '../images/google-qr.png'
+import Og from '../images/OG.png'
 import QR from '../images/qr.png'
 
 // Components
@@ -41,8 +42,13 @@ const IndexPage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Let’s Split - Share expenses</title>
-        <meta name="description" content="Let’s Split app makes it easier to come to terms with friends and family. Select past expenses, send split requests and receive your money quickly, all in one app." />
+        <meta name="description" content="Get paid. Pay. Manage. Share. Let's Split makes it easy to split bills and settle up, so you can effortlessly manage expenses with friends and family. Spend more time having fun and less time managing expenses - try Let's Split today!" />
         <meta name="keywords" content="Let’s Split, Expense, Social expense, Mobile Payments, Mobile Payment App, Friends, Pay Your Friends, Startup, Share expense, Free, Simple, Split Bill, Split Check, Split Dinner, iPhone App, Android App, easy, Credit Card"></meta>
+        <meta property="og:title" content="Let’s Split - Share expenses" />
+        <meta property="og:description" content="Effortlessly manage group expenses and payments with Let's Split. Easily manage expenses, assign to members, and settle up. Try it today!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content= "https://letsplit.com/src/images/OG.png" />
+        <meta property="og:url" content="https://letsplit.com/" />
       </Helmet>
       <main style={pageStyles}>
         <Nav />
