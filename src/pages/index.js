@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Helmet } from "react-helmet"
 import "../index.scss"
 import TagManager from 'react-gtm-module'
@@ -23,12 +23,6 @@ import QR from '../images/qr.png'
 import Nav from '../components/nav'
 import Footer from '../components/footer'
 
-// GTM
-const tagManagerArgs = {
-  gtmId: 'GTM-N2XT8HB'
-}
-TagManager.initialize(tagManagerArgs)
-
 // styles
 const primaryColor = "#3A41E8";
 
@@ -44,6 +38,10 @@ const headingStyles = {
 // markup
 const IndexPage = () => {
   const [isModalOpen, setisModalOpen] = useState(false);
+  const tagManagerArgs = {
+    gtmId: 'GTM-N2XT8HB'
+  }
+  TagManager.initialize(tagManagerArgs)
 
   return (
    <>
