@@ -295,7 +295,7 @@ header {
 .container {
     max-width: $containerWidth;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 50px;
     text-align: center;
     width: 100%;
     
@@ -379,6 +379,8 @@ footer {
             margin-top: 80px;
             margin-bottom: 20px;
         }
+
+        
     }
     
     .app-button {
@@ -560,7 +562,7 @@ footer {
         position: absolute;
         left: 0;
         right: clamp(-200px, -12vw, -30px);
-        top: clamp(-80px, -6vw, -30px);
+        top: clamp(-30px, -6vw, -20px);
         margin-top: 0px;
     }
 }
@@ -569,10 +571,23 @@ footer {
 * Track section
 */
 .split-section {
-    margin-top: 30px;
-    
+   
     @media screen and (min-width: $mediaQ) {
-        margin-top: 200px;
+        margin-top: 100px;
+    }
+    .column-content {
+        padding-top: 100px;
+
+        @media screen and (min-width: $mediaQ) {
+            padding-top: clamp(100px, 10vw, 60px);
+            padding-bottom: clamp(100px, 10vw, 50px);
+        }
+    }
+
+    p {
+        @media screen and (max-width: $mediaQ) {
+            margin: 0 auto 16px;
+        }
     }
 }
 
@@ -580,10 +595,10 @@ footer {
     margin-top: 50px;
 
     @media screen and (min-width: $mediaQ) {
-        margin-top: 0px;
+        margin-top: 50px;
     }
     img {
-        transform: translateX(22%);
+        transform: translateX(10%);
         display: block;
         
         @media screen and (min-width: $mediaQ) {
@@ -596,54 +611,37 @@ footer {
 * Settle section
 */
 
-.get-paid-custom-mb {
-    @media screen and (max-width: $mediaQ) {
-        margin-bottom: 30vw;
-    }
-}
-
 .get-paid-section {
-    text-align: left;
-    display: flex;
-    
-    @media screen and (max-width: $mediaQ) {
-        flex-direction: column-reverse;
-    }
-
-    p {
-        @media screen and (max-width: $mediaQ) {
-            max-width: 225px;
-        }
-    }
-
     .column-content {
         padding-top: 30px;
         padding-bottom: 100px;
 
         @media screen and (min-width: $mediaQ) {
-            padding-top: 100px;
-            padding-bottom: 100px;
+            padding-top: clamp(30px, 10vw, 200px);
+            padding-bottom: clamp(30px, 10vw, 200px);
         }
     }
+
+    p {
+        @media screen and (max-width: $mediaQ) {
+            margin: 0 auto 16px;
+        }
+    }
+   
 }
 
 .get-paid-img {
-    position: absolute;
-    max-width: 1200px;
-    @media screen and (max-width: $mediaQ) {
-        top: 30px;
-        left: 40px;
-        // right: -20vw;
-        width: clamp(400px, 140vw, 600px);
-    }
+    margin-top: -80px;
     @media screen and (min-width: $mediaQ) {
-        bottom: -80px;
+        position: absolute;
         left: 0;
-        width: 50vw;
-        transform: translateX(-25%);
-        min-width: 800px;
+        right: clamp(-200px, -12vw, -30px);
+        top: clamp(-30px, -6vw, -20px);
+        margin-top: 0px;
     }
 }
+
+
 
 .support-section {
 
