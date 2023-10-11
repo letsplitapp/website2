@@ -80,7 +80,7 @@ h1 {
     font-size: 34px;
 
     @media screen and (min-width: $mediaQ) {
-        font-size: 60px;
+        font-size: 55px;
         line-height: 74px;
     }
 }
@@ -97,7 +97,7 @@ h2 {
 h3 {
     color: $primaryColor;
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     font-size: 26px;
 
     @media screen and (min-width: $mediaQ) {
@@ -120,7 +120,7 @@ h4 {
 }
 
 .button {
-    margin-top: 1rem;
+    margin-top: 1.875rem;
 
     a {
         text-decoration: none;
@@ -398,6 +398,11 @@ footer {
     }
 }
 
+.header-description {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
 .app-button {
     display: flex;
 
@@ -493,7 +498,7 @@ footer {
 }
 
 /*****
-* Select section
+* Create section
 */
 .select-section {
                 margin-top: 0px;
@@ -527,7 +532,7 @@ footer {
 }
 
 /*****
-* Choose section
+* Add section
 */
 .choose-section {
 
@@ -561,7 +566,7 @@ footer {
 }
 
 /*****
-* Split section
+* Track section
 */
 .split-section {
     margin-top: 30px;
@@ -588,7 +593,7 @@ footer {
 }
 
 /*****
-* Split section
+* Settle section
 */
 
 .get-paid-custom-mb {

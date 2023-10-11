@@ -18,6 +18,10 @@ import GooglePlay from '../images/google_play.png'
 import GooglePlayQR from '../images/google-qr.png'
 import Og from '../images/OG.png'
 import QR from '../images/qr.png'
+import CreateGroup from '../images/create_group.png'
+import AddExpense from '../images/add_expenses.png'
+import SettleUp from '../images/settle_up.png'
+import Track from '../images/track_balances.png'
 
 // Components
 import Nav from '../components/nav'
@@ -51,7 +55,7 @@ const IndexPage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Let’s Split - Share expenses</title>
-        <meta name="description" content="Get paid. Pay. Manage. Share. Let's Split makes it easy to split bills and settle up, so you can effortlessly manage expenses with friends and family. Spend more time having fun and less time managing expenses - try Let's Split today!" />
+        <meta name="description" content="Manage. Share. Pay. Get Paid. Let's Split makes it easy to split bills and settle up, so you can effortlessly manage expenses with friends and family. Spend more time having fun and less time managing expenses - try Let's Split today!" />
         <meta name="keywords" content="Let’s Split, Expense, Social expense, Mobile Payments, Mobile Payment App, Friends, Pay Your Friends, Startup, Share expense, Free, Simple, Split Bill, Split Check, Split Dinner, iPhone App, Android App, easy, Credit Card"></meta>
         <meta property="og:title" content="Let’s Split - Share expenses" />
         <meta property="og:description" content="Effortlessly manage group expenses and payments with Let's Split. Easily manage expenses, assign to members, and settle up. Try it today!" />
@@ -68,7 +72,10 @@ const IndexPage = () => {
           <div className="container hero" id="signup">
             <div className="column column-content">
               <div>
-                <h1 style={headingStyles}>A simple way to split expenses with&nbsp;anyone</h1>
+                <h1 style={headingStyles}>Expense Sharing Made Simple</h1>
+                <div className="header-description">
+                  <p> <span className="color-blue">Share. Track. Split. Pay. Join the Let's Split community today.</span></p>
+                </div>
                 <div className="app-button desktop">
                   <span onClick={() => setisModalOpen(true)}><img src={AppStore} /></span>
                   <span href="" onClick={() => setisModalOpen(true)}><img src={GooglePlay} /></span>
@@ -88,7 +95,7 @@ const IndexPage = () => {
           <div className="container inverse easier-section">
             <div className="column column-content">
               <p>Let’s Split app makes it easier to track and come to terms with shared expenses.</p>
-              <p>Send and receive money with your roommates, loved ones or friends all in one app.</p>
+              <p>Track, send and receive money with your roommates, loved ones or friends all in one app.</p>
             </div>
             <div className="column column-img">
               <div>
@@ -123,15 +130,15 @@ const IndexPage = () => {
         <section>
           <div className="container inverse select-section">
             <div className="column column-content">
-              <h3>Select an expense</h3>
-              <p>Choose any past transaction from your credit card you wish to split. No more manual entries, all your group expenses are displayed, ready to be split.</p>
+              <h3>Create a Group</h3>
+              <p>Get started by creating a group with your friends, roommates, or travel companions. Groups serve as the central hub for managing all shared expenses, whether it's for trips, parties, or everyday bills.</p>
               <div className="button">
                 <a className="button-blue" href="#signup">Download</a>
               </div>
             </div>
             <div className="column column-img">
               <div className="select-img">
-                <img src={SelectImg} alt="iphone" />
+                <img src={CreateGroup} alt="Create a group" />
               </div>
             </div>
           </div>
@@ -139,15 +146,15 @@ const IndexPage = () => {
         <section className="bg-blue ">
           <div className="container choose-section">
             <div className="column column-content">
-              <h3>Choose people</h3>
-              <p>Select who you want to split the transaction with. You can even create groups if you have multiples expenses to split with them.</p>
+              <h3>Add Expenses</h3>
+              <p>Whenever someone in your group incurs an expense, simply enter the date, amount, and a brief description in the app. No more lost receipts or manual calculations.</p>
               <div className="button">
                 <a className="button-blue" href="#signup">Download</a>
               </div>
             </div>
             <div className="column column-img">
               <div className="choose-img">
-                <img src={ChoosePeopleImg} alt="iphone" />
+                <img src={AddExpense} alt="Add expenses to a group" />
               </div>
             </div>
           </div>
@@ -155,29 +162,29 @@ const IndexPage = () => {
         <section>
           <div className="container inverse split-section">
             <div className="column column-content">
-              <h3>Split the expense</h3>
-              <p>Send split requests in 3 clicks. Your friends will be notified and able to repay you through the app.</p>
+              <h3>Track Balances</h3>
+              <p>Our app tracks each member's share of the expenses and calculates who owes what to whom. Say goodbye to confusion and hello to clarity.</p>
               <div className="button">
                 <a className="button-blue" href="#signup">Download</a>
               </div>
             </div>
             <div className="column column-img split-img">
-              <img src={SplitImg} alt="iphone" />
+              <img src={Track} alt="Track balances within a group" />
             </div>
           </div>
         </section>
         <section className="bg-blue get-paid-custom-mb">
           <div className="container get-paid-section">
             <div className="column column-content">
-              <h3>Get paid</h3>
-              <p>Receive their payments directly in your bank account. Let’s Split makes sharing expenses and getting paid back - easy.</p>
+              <h3>Settle Up Securely</h3>
+              <p>When it's time to settle up, Let's Split offers an integrated payment system for secure, direct transactions through the app. This ensures that everyone gets reimbursed quickly and conveniently.</p>
               <div className="button">
                 <a className="button-blue" href="#signup">Download</a>
               </div>
             </div>
             <div className="column column-img">
               <div className="get-paid-img">
-                <img src={GetPaidImg} alt="iphone" />
+                <img src={SettleUp} alt="Integrated payment system" />
               </div>
             </div>
           </div>
