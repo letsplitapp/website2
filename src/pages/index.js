@@ -147,7 +147,7 @@ const IndexPage = () => {
           <div className="container choose-section">
             <div className="column column-content">
               <h3>Add Expenses</h3>
-              <p>Whenever someone in your group incurs an expense, simply enter the date, amount, and a brief description in the app. No more lost receipts or manual calculations.</p>
+              <p>Whenever someone in your group incurs an expense, simply enter the date, amount and a brief description in the app. No more lost receipts or manual calculations.</p>
               <div className="button">
                 <a className="button-blue" href="#signup">Download</a>
               </div>
@@ -173,7 +173,7 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section className="bg-blue get-paid-custom-mb">
+        <section className="bg-blue ">
           <div className="container get-paid-section">
             <div className="column column-content">
               <h3>Settle Up Securely</h3>
