@@ -21,7 +21,7 @@ const Nav = () => {
                             </div>
                         </div>
                         <div className={`right${toggle ? ' open' : ''}`}>
-                            <a href="https://www.letsplit.com/#how">How it works</a>
+                            <a href="./#how">How it works</a>
                             <a href="./support">Support</a>
                         </div>
                     </div>
