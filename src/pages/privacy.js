@@ -102,9 +102,15 @@ const PrivacyPage = () => {
                   Application
                 </li>
                 <li>
-                  Your login information such as your username, email address
+                  Your login information such as your username, email address, phone number
                   and password;
                 </li>
+                <li>Contact Book / Address Book data -  with your consent, 
+                    we may also collect information from on-device contact book data to locally display your list of contacts. 
+                    This also allows you to auto-fill the full name, email address and/or phone number of a given contact to whom you are 
+                    sending an invitation to Let’s Split, or inviting to a group. If you give Let’s Split this contact book permission, 
+                    only contacts you specifically interact with in the user interface will have their name, email and/or phone number collected by 
+                    Let’s Split for the purpose of sending these invitations and creating a profile in your group or friendship.</li>
                 <li>
                   Marketing information and communication preferences such as
                   comments or survey responses;
