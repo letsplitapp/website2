@@ -189,8 +189,8 @@ const IndexPage = () => {
         <section className="bg-blue ">
           <div className="container choose-section">
             <div className="column column-content">
-              <h3>Add Expenses</h3>
-              <p>Whenever someone in your group incurs an expense, simply enter the date, amount and a brief description in the app. No more lost receipts or manual calculations.</p>
+              <h3>Add Unlimited Expenses</h3>
+              <p>When someone in your group incurs an expense, easily add it in the app and customize each person's share. Enjoy the freedom of adding an unlimited amount of expenses without the hassle of lost receipts or manual calculations.</p>
               <div className="button">
                 <a className="button-blue" href="#signup">
                   Download
